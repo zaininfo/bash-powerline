@@ -160,7 +160,7 @@ __powerline() {
             local git="$BG_BLUE$FG_BASE3$(__git_info)$RESET"
         fi
 
-        PS1="$cwd$git$symbol"
+        PS1="\n$cwd$git$symbol"
     }
 
     PROMPT_COMMAND="ps1${PROMPT_COMMAND:+; $PROMPT_COMMAND}"
